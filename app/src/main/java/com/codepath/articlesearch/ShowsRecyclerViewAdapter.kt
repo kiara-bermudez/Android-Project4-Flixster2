@@ -29,7 +29,6 @@ class ShowAdapter(
 
         private val posterImageView = itemView.findViewById<ImageView>(R.id.poster_image)
         private val titleTextView = itemView.findViewById<TextView>(R.id.show_title)
-        //private val overviewTextView = itemView.findViewById<TextView>(R.id.show_overview)
 
         init {
             mView.setOnClickListener(this)
@@ -38,7 +37,6 @@ class ShowAdapter(
         // TODO: Write a helper method to help set up the onBindViewHolder method
         fun bind(show: Show) {
             titleTextView.text = show.name
-            //overviewTextView.text = show.overview
 
             Glide.with(context)
                 .load(show.posterUrl)
@@ -62,7 +60,7 @@ class ShowAdapter(
         val context = parent.context
         val inflater = LayoutInflater.from(context)
         // Inflate the custom layout
-        val contactView = inflater.inflate(R.layout.fragment_movie, parent, false)
+        val contactView = inflater.inflate(R.layout.fragment_show, parent, false)
         // Return a new holder instance
         return ShowViewHolder(contactView)
     }

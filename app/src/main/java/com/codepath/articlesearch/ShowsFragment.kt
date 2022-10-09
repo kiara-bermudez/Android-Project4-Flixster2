@@ -40,7 +40,7 @@ class ShowsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_movies_list, container, false)
+        val view = inflater.inflate(R.layout.fragment_shows_list, container, false)
         val progressBar = view.findViewById<ContentLoadingProgressBar>(R.id.progress)
         val recyclerView = view.findViewById<RecyclerView>(R.id.list)
         val context = view.context

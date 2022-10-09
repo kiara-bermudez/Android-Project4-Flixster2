@@ -55,12 +55,6 @@ class ShowAdapter(
             context.startActivity(intent)
         }
 
-
-//        var mItem: Show? = null
-//        val mMovieTitle: TextView = mView.findViewById<TextView>(R.id.show_title) as TextView
-//        val mMovieOverview: TextView = mView.findViewById<TextView>(R.id.show_overview) as TextView
-//        val mMovieImage: ImageView = mView.findViewById<ImageView>(R.id.poster_image) as ImageView
-
     }
 
     // Usually involves inflating a layout from XML and returning the holder
@@ -79,18 +73,6 @@ class ShowAdapter(
         val show = shows[position]
         holder.bind(show)
 
-        // Set item views based on your views and data model
-//        holder.mItem = movie
-//        holder.mMovieTitle.text = movie.title
-//        holder.mMovieOverview.text = movie.overview
-//
-//        Glide.with(holder.mView)
-//            .load("https://image.tmdb.org/t/p/w500/"+movie.movieImageUrl)
-//            .override(133,200)
-//            .placeholder(R.drawable.movie_placeholder)
-//            .error(R.drawable.movie_placeholder)
-//            .centerInside()
-//            .into(holder.mMovieImage)
     }
 
     override fun getItemCount(): Int {

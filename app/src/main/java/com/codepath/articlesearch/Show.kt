@@ -4,26 +4,6 @@ import android.support.annotation.Keep
 import kotlinx.serialization.SerialName
 import kotlinx.serialization.Serializable
 
-/**
- * The Model for storing a single movie from the MovieDB API
- *
- * SerializedName tags MUST match the JSON response for the
- * object to correctly parse with the gson library.
- */
-//class Movie {
-//    @JvmField
-//    @SerializedName("title")
-//    var title: String? = null
-//
-//    @JvmField
-//    @SerializedName("overview")
-//    var overview: String? = null
-//
-//    @JvmField
-//    @SerializedName("poster_path")
-//    var movieImageUrl: String? = null
-//}
-
 @Keep
 @Serializable
 data class SearchShowsResults(

@@ -116,17 +116,6 @@ class ShowsFragment : Fragment() {
                     Log.e(TAG, "Exception: $e")
                 }
 
-//                // Parse JSON into Models
-//                val resultsJSON: String = json.jsonObject.get("results").toString()
-//                //Log.d("MoviesFragment", resultsJSON)
-//
-//                val gson = Gson()
-//                val arrayMovieType = object : TypeToken<List<Movie>>() {}.type
-//                val models : List<Movie> = gson.fromJson(resultsJSON, arrayMovieType)
-//                recyclerView.adapter = ShowAdapter(models, this@ShowsFragment)
-//
-//                // Look for this in Logcat:
-//                Log.d("MoviesFragment", "response successful")
             }
 
 
